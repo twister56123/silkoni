@@ -1,0 +1,16 @@
+---
+import { cn } from '@/lib/utils';
+
+// Props interface for TypeScript strict mode
+interface Props {
+  class?: string;
+}
+
+// Destructure props with class rename to avoid conflict
+const { class: className } = Astro.props;
+---
+
+<!-- Container component with max-width and centered content -->
+<div class={cn("max-w-7xl mx-auto px-4", className)}>
+  <slot />
+</div>
