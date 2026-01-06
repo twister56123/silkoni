@@ -31,13 +31,14 @@ const products = await getCollection('products');
 products.sort((a, b) => a.data.order - b.data.order);
 ---
 
-<html lang="en">
+<html lang="uk">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>SILKONI - Шовкові наволочки та тюрбани</title>
+		<meta name="description" content="Преміальні шовкові наволочки та тюрбани для здорового сну та краси волосся. Натуральний шовк, гіпоалергенний. Доставка по Україні." />
 		</head>
 	<body>
 		<section id="products" class="py-16">
@@ -53,7 +54,7 @@ products.sort((a, b) => a.data.order - b.data.order);
 								loading="lazy"
 								class="w-full h-64 object-cover rounded-lg mb-4"
 							/>
-							<p class="text-xl font-semibold text-green-600 mb-2">
+							<p class="text-xl font-semibold text-green-700 mb-2">
 								{product.data.price} {product.data.currency}
 							</p>
 							<p class="text-gray-700 mb-4">{product.data.description}</p>
